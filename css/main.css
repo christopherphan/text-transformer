@@ -1,0 +1,224 @@
+body {
+    background-color: #262e2e;
+    color: black;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellowgreen
+}
+
+a:hover { 
+    color: yellow;
+    background-color: darkgreen;
+}
+
+
+a.noeffect:visited { 
+    color: inherit;
+}
+
+a.noeffect:hover {
+    color: inherit;
+    background-color: inherit;
+}
+
+#main {
+    height: 80vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    padding: 3vh;
+    border-radius: 3vw;
+    color: limegreen;
+    font-family: Menlo, "Lucida Console", "Courier New", Courier, monospace;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 4fr 2fr 2fr 20fr 2fr 2fr 20fr 2fr 2fr 1fr;
+    grid-template-columns: repeat(4, 2fr) 1fr;
+    background-color: #080808;
+}
+
+#overlay {
+    grid-area: 1/1/11/6;
+    background: repeating-linear-gradient(
+        black,
+        black 2px,
+        #383647 2px,
+        #383647 4px
+    );
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.box {
+    background: none;
+    padding: 15px;
+    border: 5px solid limegreen;
+    border-radius: 20px;
+    color: limegreen;
+    font-family: Menlo, "Lucida Console", "Courier New", Courier, monospace;
+    overflow: scroll;
+}
+
+#title {
+    grid-area: 1/1/2/6;
+    font-size: 100%;
+    padding-left: 1em;
+    background-color: limegreen;
+    color: black;
+    font-weight: bold;
+}
+
+.about_heading{
+    background-color: limegreen;
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.label {
+    font-size: 100%;
+    text-decoration: underline;
+    padding-left: 1em;
+}
+
+#input_label {
+    grid-area: 2/1/4/5;
+}
+
+#clear_button {
+    grid-area: 3/5/4/6;
+}
+
+#inbox {
+    grid-area: 4/1/5/6;
+}
+
+#output_label {
+    grid-area: 5/1/7/5;
+}
+
+#copy_button {
+    grid-area: 6/5/7/6;
+}
+
+div.button {
+    text-align: center;
+    cursor: pointer;
+    visibility: visible;
+}
+
+span.button {
+    color: yellow;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span.button-highlight {
+    background-color: yellow;
+    color: black;
+}
+
+span.button-hover {
+    background-color: darkgreen;
+} 
+
+#outbox {
+    grid-area: 7/1/8/6;
+}
+
+.option {
+    cursor: pointer;
+}   
+
+#github_link {
+    grid-area: 9/5/10/6;
+}
+
+#about_link {
+    grid-area: 8/5/9/6;
+}
+
+#options {
+    color: yellow;
+    display: grid;
+    grid-area: 8/1/9/6;
+    grid-gap: 5px;
+    grid-template-rows: subgrid;
+    grid-template-columns: subgrid;
+}
+
+.option-highlight {
+    background-color: yellow;
+    color: black;
+}   
+
+.option-hover {
+    background-color: darkgreen;
+} 
+
+#desc {
+    grid-area: 9/1/10/3;
+    color: #b10101;
+}
+
+#cover_screen {
+    grid-area: 2/1/9/6;
+    background-color: limegreen;
+}
+
+#sorry_text {
+    grid-area: 5/1/7/6;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sorry-gone {
+    visibility: hidden;
+}
+
+.button-hidden{
+    visibility: hidden;
+}
+
+#copyright {
+    grid-area: -2/-3/-1/-1;
+    color: darkgrey;
+    font-size: 10px;
+    text-align: right;
+}
+
+#about_text {
+    grid-area: 2/1/-4/-1;
+    padding: 1em;
+    color: yellow;
+    background-color: darkgreen;
+    overflow: scroll;
+}
+
+#about_1 {
+    text-align: center;
+}
+
+.text-hidden{
+    visibility: hidden;
+}
+
+.text-visible {
+    visibility: visible;
+}
+
+#sarcastic {
+    color: cyan;
+}
+
+#about_close {
+    text-align: right;
+}
