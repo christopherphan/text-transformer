@@ -98,13 +98,17 @@ function toggleAboutText(evt){
     let state = aboutTextDiv.getAttribute("class");
     if (state == "text-hidden"){
         aboutTextDiv.setAttribute("class", "text-visible");
+        aboutCloseButton.setAttribute("class", "button");
+        clearButton.setAttribute("class", "button button-hidden");
         aboutCloseAnchor.setAttribute("class", "text-visible");
         changeSarcastic();
         sarcasticCycles = 0;
         sarcasticMin = false;
     } else {
         aboutTextDiv.setAttribute("class", "text-hidden");
+        aboutCloseButton.setAttribute("class", "button button-hidden");
         aboutCloseAnchor.setAttribute("class", "text-hidden");
+        clearButton.setAttribute("class", "button");
     }
 }
 
@@ -186,6 +190,7 @@ const aboutTextDiv = document.getElementById("about_text");
 const sarcasticText = document.getElementById("sarcastic");
 const sarcasticOriginal = sarcasticText.innerText;
 const licenseInfoDiv = document.getElementById("license_info");
+const aboutCloseButton = document.getElementById("about_close");
 const aboutCloseAnchor = document.getElementById("about_close_a");
 const aboutCloseText = document.getElementById("about_close_text");
 var showingSarcasticTime = false;

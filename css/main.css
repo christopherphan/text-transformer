@@ -186,6 +186,7 @@ span.button-hover {
 
 .button-hidden{
     visibility: hidden;
+    pointer-events: none;
 }
 
 #copyright {
@@ -209,6 +210,7 @@ span.button-hover {
 
 .text-hidden{
     visibility: hidden;
+    pointer-events: none;
 }
 
 .text-visible {
